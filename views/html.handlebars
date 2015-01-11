@@ -1,0 +1,101 @@
+<h1 class="title">HTML Basics</h1>
+<ol class="breadcrumb">
+  <li class="active">Learn Markup Structure and Common Tags</li>
+</ol>
+<div class="section">
+  <h1 class="section-title">Basic Markup</h1>
+
+  <h2>Anatomy of an Element</h2>
+    <pre class="prettyprint linenums">
+    &lt;!-- An element has an opening tag. --&gt;
+    &lt;div&gt;
+      &lt;!-- Some content --&gt;
+      This is a basic line. 
+      &lt;span&gt; submodule ... &lt;/span&gt;
+    And closing tag:
+    &lt;/div&gt;
+    <br/>
+    Tag attributes are placed inside the opening tag.
+    &lt;div class="text-warning"&gt;Your password is too short&lt;/div&gt;
+  </pre>
+
+  <h2>Common Tags</h2>
+  <pre class="prettyprint linenums">
+  &lt;div&gt;
+    You can also nest certain markup tags inside structural tags.
+    <br/>
+    The following creates a link to the /about-me page.
+    &lt;a href="about-me"&gt;&lt;/a&gt;
+    <br/>
+    The following creates a link to an image. The "src" attribute takes a relative or absolute path.
+    &lt;img src="images/toolkit.jpg"&gt;&lt;/a&gt;
+    <br/>
+    The following styles a piece of text.
+    &lt;span style="color: red; font-weight: 500"&gt;Bolded Red&lt;/a&gt;
+    <br/>
+    The following is a comment (starts with "<!--" and ends with "-->")
+    &lt;!-- This is a comment --&gt;
+    <br/>
+    "Block" tags take up space. "Inline" tags are meant to be placed inside blocks.
+    Here are the most common tags you will want to use:
+    <br/>
+    <b>Block</b> "div", "center", "ul", "li", "h1", "h2", "h3", ... "h6"
+    <b>Inline</b> "span", "img", "a", "button"
+    <br/>
+    Lastly, there are tags that should be used to structure the page, include css / js, etc.
+    These are technically inline, but I'll call them "meta" tags.
+    <br/>
+    <b>Meta</b> "html", "head", "body", "script", "link" (for including css)
+    <br/>
+  &lt;/div&gt;
+  </pre>
+  <h2>Basic Structure</h2>
+  <p>Root element (outermost) is "html". Inside, place the "head" as the first subelement
+  and "body" as the second subelement. </p>
+  <pre class="prettyprint linenums">
+  &lt;html&gt;
+    &lt;head&gt;
+      &lt;div&gt; Include. Like C's #define &lt;/div&gt;
+      &lt;script src="app.js"&gt;&lt;/script&gt;
+      &lt;link href="app.css"&gt;&lt;/link&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+      &lt;-- Body section. Place your page's content here. --&gt;
+    &lt;/body&gt;
+  &lt;/html&gt;
+  </pre>
+
+  <p>
+
+  <h2>Create modules</h2>
+  <p>For a portfolio, first flush out the structure of a basic page.</p>
+  <div class="panel panel-info">
+    <div class="panel-heading">
+      <h3 class="panel-title">Running sample code</h3>
+    </div>
+    <div class="panel-body">
+      
+    </div>
+  </div>
+  <div class="annotated-code">
+    <pre class="prettyprint linenums">
+      &lt; &gt; 
+    </pre>
+    <div class="annotation" data-line="2">
+      Almost always use === (which checks both values are equal in both value and type)
+    </div>
+    <div class="annotation" data-line="10">
+      == leads to weird behavior because it tries to convert the values to the same type, e.g.
+    </div>
+  </div>
+  <h2>Functions</h2>
+  <pre class="prettyprint linenums">
+  </pre>
+
+  <h2>Exercise #1: The Basics</h2>
+  <p>Try out <a href="http://jsfiddle.net/dv99v/1/" target="_blank">this JSFiddle exercise</a> and see if you can fill in the JavaScript to pass all the tests.  (bonus points if you pass the bonus tests)</p>
+  <p>And if you had time still, try this <a href="http://jsfiddle.net/eRm26/" target="_blank">secondary exercise</a></p>
+    
+  <h2>All Done?</h2>
+  <a href="/jsadvlesson" class="btn btn-primary">Continue</a>
+</div>

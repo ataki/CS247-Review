@@ -16,3 +16,23 @@ body {
   font-size: 3em;
   color: #999;
 }
+
+#intro {
+  margin: 0 auto;
+  width: 320px;
+  padding: 10px;
+  position: relative;
+}
+
+#intro .section {
+  margin: 0 auto;
+  width: 100%
+}
+
+#intro h2 {
+  font-size: 2em;
+}
+
+#intro ol, #intro ul {
+  font-size: 1.33em;
+}
